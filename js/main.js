@@ -25,23 +25,7 @@ var Page = React.createClass({
 		var newContacts = this.state.data.concat([contact]);
 		this.setState({ data: newContacts });
 	},
-	// componentDidMount: function() {
-	//     $.ajax({
-	//         url: 'https://www.googleapis.com/books/v1/volumes?q=harry&startIndex=0&maxResults=40',
-	//         dataType: 'json',
-	//         cache: false,
-	//         success: function(data) {
-	//         	console.log(data);
-	//             // this.setState({data: data});
-	//             // this.chooseRandomQuote();
-	//         }.bind(this),
-	//             error: function(xhr, status, err) {
-	//             console.error('https://www.googleapis.com/books/v1/volumes?q=harry&startIndex=0&maxResults=40', status, err.toString());
-	//         }.bind(this)
-	//     });
-	// },
 	render: function () {
-
 		return React.createElement(
 			"myElement",
 			null,
